@@ -35,4 +35,8 @@ The methodology of this study was to exhaustively experiment with different comb
 ## Best Model
 The best model produced in this notebook was a random forest classifier model with the default parameters. It recieved a precision score of 0.786, an F1 score of 0.458, and AUC of 0.657 when evaluated on the testing data, which are all significantly better than the scores of the other model types experimented with.
 
-## Results of Analysis
+## Results
+
+## Conclusions
+
+## Next Steps
