@@ -35,8 +35,20 @@ The methodology of this study was to exhaustively experiment with different comb
 ## Best Model
 The best model produced in this notebook was a random forest classifier model with the default parameters. It recieved a precision score of 0.786, an F1 score of 0.458, and AUC of 0.657 when evaluated on the testing data, which are all significantly better than the scores of the other model types experimented with.
 
-## Results
+![](https://github.com/Davidkeebler/Credit_Card_Approvals_and_Denials_Prediction/blob/main/img-src/best_cmatrix.png?raw=true)
 
-## Conclusions
+## Analysis and Conclusions
+![](https://github.com/Davidkeebler/Credit_Card_Approvals_and_Denials_Prediction/blob/main/img-src/feature_importances.png?raw=true)
+This chart calculated from our best model's feature importances reports that the birthday count (age of applicant), days employed at current job, and anual income are the most important factors in deciding whether or not to grant a credit card to applicants. 
+With knowledge that these features are the most important, we can conduct further analysis of the model to create actionable advice based on its predictions. We used the full dataset to predict labels for each record, and then took the averages of these three categories for only the records the model predicted would be approved. This yields approximate thresholds for banks to consider in these three categories.
+The model predicts that, on average:
+- A person who makes $165,000/yr will be approved. 
+- A person 33 years of age will be approved.
+- A person who has held their current job for 3000 days will be approved.
+Individuals above these thresholds can be fast tracked for approval. Individuals below them ought to be subject to more scrutiny in the other factors.
 
 ## Next Steps
+There are several steps that we could use to improve our model. 
+- **Get more data.** The size of the dataset used to train this model is rather limited, and this in turn limits the accuracy of the model we can use it to create.
+- **Get better data.** In particular, the occupation type category was missing 1/3 of its values that were assumed to represent unemployed. If we knew the real value of these missing records, our model would likely be more accurate.
+- **Try more modeling techniques.** The three model types tested in this notebook are not the only types of classifier model, and it is probable that other types of classifiers could perform better and yield more interpretable recommendations. 
