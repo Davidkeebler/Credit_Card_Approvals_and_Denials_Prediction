@@ -45,6 +45,7 @@ The model predicts that, on average:
 - A person who makes $165,000/yr will be approved. 
 - A person 33 years of age will be approved.
 - A person who has held their current job for 3000 days will be approved.
+
 Individuals above these thresholds can be fast tracked for approval. Individuals below them ought to be subject to more scrutiny in the other factors.
 
 ## Next Steps
