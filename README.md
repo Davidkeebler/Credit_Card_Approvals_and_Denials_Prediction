@@ -48,6 +48,13 @@ The model predicts that, on average:
 
 Individuals above these thresholds can be fast tracked for approval. Individuals below them ought to be subject to more scrutiny in the other factors.
 
+## Recommendations
+We recommend that the bank uses these average thresholds as guidelines to determine how to interpret the results of the machine learning model. Applicants above the averages should be reconsidered even if the model initially rejects them, due to the high false negative rate. Applicants that are below the averages can just be safely rejected. 
+
+Even if the bank rejects the majority of applicants, their classification by this model can still yield useful information. While these individuals may not qualify for this particular credit card, there are likely still many other financial products that they could qualify for. I recommend that the bank to market less risky financial products to these individuals after their credit card applications have been rejected. Alternatively, individuals who are approved by this model could be pre-approved for other financial products that are similarly risky to credit cards, since they are clearly already well-qualified.
+
+Another recommendation I can offer the banks is to use these thresholds as a profile for who to market the credit cards to in the first place. They should seek to serve advertisements to individuals who are over the age of 33, have a strong employment history, and make over $165,000 a year that offer them pre-approval on these credit cards. Additionally, individuals who are below the thresholds could be targeted with advertisements for smaller, less-risky lines of credit that help them to build their credit score and eventually qualify for one of these credit cards.
+
 ## Next Steps
 There are several steps that we could use to improve our model. 
 - **Get more data.** The size of the dataset used to train this model is rather limited, and this in turn limits the accuracy of the model we can use it to create.
